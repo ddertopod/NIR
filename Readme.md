@@ -123,7 +123,7 @@ NIR Project/
 - `make filter` — запуск `filter.py`.
 - `make runbase` — запуск `NIR/main.py`.
 - `make runfair` — запуск `NIR/fairness_improvement/main.py`.
-- `make runfairall` — запуск `NIR/fairness_improvement_all_together/main.py`.
+- `make runfairall` — запуск `NIR/fairness_improvement_all_together/prg_main.py`.
 
 Передача аргументов:
 ```bash
