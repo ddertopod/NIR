@@ -5,8 +5,8 @@ INSTALL_PY    := install.py
 REQUIREMENTS  := requirements.txt
 FILTER_PY  := filter.py
 RUNBASE_PY := NIR/main.py
-RUNFAIR_PY := NIR/fairness improvement/main.py
-RUNFAIRALL_PY := NIR/fairness improvement all together/main.py
+RUNFAIR_PY := NIR_fairness_improvement/main.py
+RUNFAIRALL_PY := NIR_fairness_improvement_all_together/main.py
 
 PYTHON ?= python3
 ARGS ?=
