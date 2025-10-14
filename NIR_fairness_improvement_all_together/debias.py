@@ -1,7 +1,7 @@
 from fairlearn.postprocessing import ThresholdOptimizer
 import numpy as np
 from sklearn.metrics import classification_report, roc_auc_score
-from evaluate import evaluate_model, SENSITIVE_FEATURES
+from .evaluate import evaluate_model, SENSITIVE_FEATURES
 
 def debias_model(model, X_test, y_test):
     print(f"\n=== Equalized Odds по совокупности признаков {SENSITIVE_FEATURES} ===")

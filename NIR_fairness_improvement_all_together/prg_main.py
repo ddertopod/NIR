@@ -1,11 +1,11 @@
 from data_loader import load_data, train_test_split_data
 from features import build_preprocessor
-from model import train_model
-from evaluate import evaluate_model, SENSITIVE_FEATURES
+from .model import train_model
+from .evaluate import evaluate_model, SENSITIVE_FEATURES
 from shapExp import explain_model
-from debias import debias_model
+from .debias import debias_model
 from config import Config
-from optimize_threshhold import optimize_threshold  
+from .optimize_threshhold import optimize_threshold  
 import numpy as np
 
 def main():

@@ -1,7 +1,7 @@
 from data_loader import load_data, train_test_split_data
 from features import build_preprocessor
-from model import train_model
-from evaluate import evaluate_model
+from .model import train_model
+from .evaluate import evaluate_model
 from shapExp import explain_model
 
 def main():

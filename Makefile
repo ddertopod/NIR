@@ -4,9 +4,9 @@ DATA_DIR   := data
 INSTALL_PY    := install.py
 REQUIREMENTS  := requirements.txt
 FILTER_PY  := filter.py
-RUNBASE_PY := NIR/main.py
-RUNFAIR_PY := NIR_fairness_improvement/main.py
-RUNFAIRALL_PY := NIR_fairness_improvement_all_together/main.py
+RUNBASE_PY := NIR.main
+RUNFAIR_PY := NIR_fairness_improvement.main
+RUNFAIRALL_PY := NIR_fairness_improvement_all_together.prg_main
 
 PYTHON ?= python3
 ARGS ?=
@@ -30,16 +30,16 @@ libs:
 	@$(PYTHON) -m pip install -r "$(REQUIREMENTS)"
 
 filter:
-	@$(PYTHON) "$(FILTER_PY)" $(ARGS)
+	@$(PYTHON) -m "$(FILTER_PY)" $(ARGS)
 
 runbase:
-	@$(PYTHON) "$(RUNBASE_PY)" $(ARGS)
+	@$(PYTHON) -m "$(RUNBASE_PY)" $(ARGS)
 
 runfair:
-	@$(PYTHON) "$(RUNFAIR_PY)" $(ARGS)
+	@$(PYTHON) -m "$(RUNFAIR_PY)" $(ARGS)
 
 runfairall:
-	@$(PYTHON) "$(RUNFAIRALL_PY)" $(ARGS)
+	@$(PYTHON) -m "$(RUNFAIRALL_PY)" $(ARGS)
 
 ZIP_NAME := hmda_2017_ca_all-records_labels.zip
 STAMP    := $(DATA_DIR)/.hmda_2017_ca_unpacked.stamp
